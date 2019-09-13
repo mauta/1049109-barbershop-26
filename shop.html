@@ -11,7 +11,7 @@
     <header>
       <nav>
         <a>
-          <img src="/img/logo-small.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+          <img src="img/logo-small.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
         </a>
         <ul>
           <li><a href="/index.html#info">Информация</a></li>
@@ -37,68 +37,123 @@
       <li>Средства для ухода</li>
     </ul>
     <section>
-      <h2>Фильтры товаров</h2>
-      <h3>Производители</h3>
-      <!-- форма -->
-      <h3>Группы товров</h3>
-      <!-- форма -->
+      <h2 class="visually-hidden">Фильтры товаров</h2>
+      <fieldset>
+        <legend> Производители</legend>
+        <ul>
+          <li>
+            <input type="checkbox" name="Baxter" id="filter-Baxter" checked>
+            <label for="filter-Baxter">Baxter of California</label>
+          </li>
+          <li>
+            <input type="checkbox" name="MR-Natty" id="filter-MR-Natty">
+            <label for="filter-MR-Natty">MR Natty</label>
+          </li>
+          <li>
+            <input type="checkbox" name="Suavecito" id="filter-Suavecito" checked>
+            <label for="filter-Suavecito">Suavecito</label>
+          </li>
+          <li>
+            <input type="checkbox" name="Malin+Goetz" id="filter-Malin+Goetz">
+            <label for="filter-Malin+Goetz">Malin+Goetz</label>
+          </li>
+          <li>
+            <input type="checkbox" name="Murray's" id="filter-Murray's">
+            <label for="filter-Murray's">Murray's</label>
+          </li>
+          <li>
+            <input type="checkbox" name="American" id="filter-American" checked>
+            <label for="filter-American">American Crew</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Группы товров</legend>
+        <ul>
+          <li>
+            <input type="radio" name="product-group" id="filter-Shaving_kit">
+            <label for="filter-Shaving_kit">Бритвенные принадлежности</label>
+          </li>
+          <li>
+            <input type="radio" name="product-group" id="filter-care" checked>
+            <label for="filter-care">Средства для ухода</label>
+          </li>
+          <li>
+            <input type="radio" name="product-group" id="filter-accessories">
+            <label for="filter-accessories">Аксессуары</label>
+          </li>
+        </ul>
+
+      </fieldset>
+
+
+
+
     </section>
     <section>
-      <h2>Каталог товаров</h2>
+      <h2 class="visually-hidden">Каталог товаров</h2>
       <ul>
         <li>
           <a href="/catalog-item.html">
-            <img src="/img/travel_kit_middle.jpg" alt="Набор для путешествий" width="220" height="165">
-            <p>Набор для путешествий <br> «Baxter of California»</p>
+            <h3><p>Набор для путешествий <br> «Baxter of California»</p></h3>
+            
+            
+            <img src="img/travel_kit_middle.jpg" alt="Набор для путешествий" width="220" height="165">
+           
           </a>
           <p> <b>2900 p</b>
-          <button type="button">Купить</button>
+            <button type="button">Купить</button>
           </p>
         </li>
         <li>
-            <a href="/catalog-item.html">
-          <img src="/img/conditioner.jpg" alt="Набор для путешествий" width="220" height="165">
-          <p>Увлажняющий кондиционер <br> «Baxter of California»</p>
-        </a>
+          <a href="/catalog-item.html">
+            <h3><p>Увлажняющий кондиционер <br> «Baxter of California»</p></h3>
+            <img src="img/conditioner.jpg" alt="Набор для путешествий" width="220" height="165">
+            
+          </a>
           <p><b>750 p</b>
-          <button type="button">Купить</button>
-        </p>
+            <button type="button">Купить</button>
+          </p>
         </li>
         <li>
-            <a href="/catalog-item.html">
-          <img src="/img/gel.jpg" alt="Набор для путешествий" width="220" height="165">
-          <p>Гель для волос <br> «SUAVECITO»</p>
-        </a>
+          <a href="/catalog-item.html">
+            <h3><p>Гель для волос <br> «SUAVECITO»</p></h3>
+            <img src="img/gel.jpg" alt="Набор для путешествий" width="220" height="165">
+            
+          </a>
           <p><b>290 p</b>
-          <button type="button">Купить</button>
-        </p>
+            <button type="button">Купить</button>
+          </p>
         </li>
         <li>
-            <a href="/catalog-item.html">
-          <img src="/img/molding_clay.jpg" alt="Набор для путешествий" width="220" height="165">
-          <p>Глина для укладки волос <br> «American crew»</p>
-        </a>
+          <a href="/catalog-item.html">
+            <h3><p>Глина для укладки волос <br> «American crew»</p></h3>
+            <img src="img/molding_clay.jpg" alt="Набор для путешествий" width="220" height="165">
+            
+          </a>
           <p><b>500 p</b>
-          <button type="button">Купить</button>
-        </p>
+            <button type="button">Купить</button>
+          </p>
         </li>
         <li>
-            <a href="/catalog-item.html">
-          <img src="/img/gel_crew.jpg" alt="Набор для путешествий" width="220" height="165">
-          <p>Гель для волос <br> «AMERICAN CREW»</p>
-        </a>
+          <a href="/catalog-item.html">
+            <h3> <p>Гель для волос <br> «AMERICAN CREW»</p></h3>
+            <img src="img/gel_crew.jpg" alt="Набор для путешествий" width="220" height="165">
+           
+          </a>
           <p><b>300 p </b>
-          <button type="button">Купить</button>
-        </p>
+            <button type="button">Купить</button>
+          </p>
         </li>
         <li>
-            <a href="/catalog-item.html">
-          <img src="/img/Shaving_kit.jpg" alt="Набор для путешествий" width="220" height="165">
-          <p>Набор для бритья <br> «Baxter of California»</p>
-        </a>
+          <a href="/catalog-item.html">
+            <h3><p>Набор для бритья <br> «Baxter of California»</p></h3>
+            <img src="img/Shaving_kit.jpg" alt="Набор для путешествий" width="220" height="165">
+            
+          </a>
           <p><b>3900 p </b>
-          <button type="button">Купить</button>
-        </p>
+            <button type="button">Купить</button>
+          </p>
         </li>
       </ul>
 
@@ -113,10 +168,10 @@
 
   <!-- подвал -->
   <footer>
-    <p>БАРБЕРШОП «БОРОДИНСКИЙ» <br>
-      АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, <br> Д. 19/8 <br>
-      <a href=""> КАК НАС НАЙТИ?</a> <br>
-      Телефон: +7 123 456-78-90</p>
+    <p>барбершоп «бородинский» <br>
+      адрес: г. санкт-петербург, ул. б. конюшенная, <br> д. 19/8 <br>
+      <a href=""> как нас найти?</a> <br>
+      телефон: +7 123 456-78-90</p>
     <div>
       <p>Давайте дружить</p>
       <ul>
