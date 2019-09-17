@@ -4,25 +4,31 @@
 <head>
   <meta charset="utf-8">
   <title>Средства для ухода</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic"
+    rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="body_style">
   <header>
     <header>
-      <nav>
+      <nav class="nav">
         <a>
           <img src="img/logo-small.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
         </a>
-        <ul>
-          <li><a href="/index.html#info">Информация</a></li>
-          <li><a href="/index.html#news">Новости</a></li>
-          <li><a href="/price.html">Прайс-лист</a></li>
-          <li><a href="/shop.html">Магазин</a></li>
-          <li><a href="/index.html#contact">Контакты</a></li>
+        <ul class="nav_site">
+          <li><a class="link nav_link" href="/index.html#info">Информация</a></li>
+          <li><a class="link nav_link" href="/index.html#news">Новости</a></li>
+          <li><a class="link nav_link" href="/price.html">Прайс-лист</a></li>
+          <li><a class="link nav_link" href="/shop.html">Магазин</a></li>
+          <li><a class="link nav_link" href="/index.html#contact">Контакты</a></li>
         </ul>
-        <ul>
+        <ul class="nav_user">
           <li>
-            <button type="button">Войти</button>
+            <a class="link nav_link"  href="login.html">
+              Вход
+            </a>
           </li>
         </ul>
       </nav>
@@ -32,8 +38,8 @@
   <main>
     <h1>Средства для ухода</h1>
     <ul>
-      <li><a href="/index.html">Главная</a></li>
-      <li><a href="/shop.html">Магазин</a></li>
+      <li><a class="link"  href="/index.html">Главная</a></li>
+      <li><a class="link"  href="/shop.html">Магазин</a></li>
       <li>Средства для ухода</li>
     </ul>
     <section>
@@ -94,62 +100,74 @@
       <h2 class="visually-hidden">Каталог товаров</h2>
       <ul>
         <li>
-          <a href="/catalog-item.html">
-            <h3><p>Набор для путешествий <br> «Baxter of California»</p></h3>
-            
-            
+          <a  class="link"  href="/catalog-item.html">
+            <h3>
+              <p>Набор для путешествий <br> «Baxter of California»</p>
+            </h3>
+
+
             <img src="img/travel_kit_middle.jpg" alt="Набор для путешествий" width="220" height="165">
-           
+
           </a>
           <p> <b>2900 p</b>
             <button type="button">Купить</button>
           </p>
         </li>
         <li>
-          <a href="/catalog-item.html">
-            <h3><p>Увлажняющий кондиционер <br> «Baxter of California»</p></h3>
+          <a  class="link"  href="/catalog-item.html">
+            <h3>
+              <p>Увлажняющий кондиционер <br> «Baxter of California»</p>
+            </h3>
             <img src="img/conditioner.jpg" alt="Набор для путешествий" width="220" height="165">
-            
+
           </a>
           <p><b>750 p</b>
             <button type="button">Купить</button>
           </p>
         </li>
         <li>
-          <a href="/catalog-item.html">
-            <h3><p>Гель для волос <br> «SUAVECITO»</p></h3>
+          <a  class="link"  href="/catalog-item.html">
+            <h3>
+              <p>Гель для волос <br> «SUAVECITO»</p>
+            </h3>
             <img src="img/gel.jpg" alt="Набор для путешествий" width="220" height="165">
-            
+
           </a>
           <p><b>290 p</b>
             <button type="button">Купить</button>
           </p>
         </li>
         <li>
-          <a href="/catalog-item.html">
-            <h3><p>Глина для укладки волос <br> «American crew»</p></h3>
+          <a class="link"  href="/catalog-item.html">
+            <h3>
+              <p>Глина для укладки волос <br> «American crew»</p>
+            </h3>
             <img src="img/molding_clay.jpg" alt="Набор для путешествий" width="220" height="165">
-            
+
           </a>
           <p><b>500 p</b>
             <button type="button">Купить</button>
           </p>
         </li>
         <li>
-          <a href="/catalog-item.html">
-            <h3> <p>Гель для волос <br> «AMERICAN CREW»</p></h3>
+          <a class="link"  href="/catalog-item.html">
+            <h3>
+              <p>Гель для волос <br> «AMERICAN CREW»</p>
+            </h3>
             <img src="img/gel_crew.jpg" alt="Набор для путешествий" width="220" height="165">
-           
+
           </a>
           <p><b>300 p </b>
             <button type="button">Купить</button>
           </p>
         </li>
         <li>
-          <a href="/catalog-item.html">
-            <h3><p>Набор для бритья <br> «Baxter of California»</p></h3>
+          <a class="link"  href="/catalog-item.html">
+            <h3>
+              <p>Набор для бритья <br> «Baxter of California»</p>
+            </h3>
             <img src="img/Shaving_kit.jpg" alt="Набор для путешествий" width="220" height="165">
-            
+
           </a>
           <p><b>3900 p </b>
             <button type="button">Купить</button>
@@ -158,10 +176,10 @@
       </ul>
 
       <ul>
-        <li><a href="">1</a></li>
-        <li><a href="">2</a></li>
-        <li><a href="">3</a></li>
-        <li><a href="">4</a></li>
+        <li><a class="link"  href="">1</a></li>
+        <li><a class="link"  href="">2</a></li>
+        <li><a class="link"  href="">3</a></li>
+        <li><a class="link"  href="">4</a></li>
       </ul>
     </section>
   </main>
@@ -170,19 +188,19 @@
   <footer>
     <p>барбершоп «бородинский» <br>
       адрес: г. санкт-петербург, ул. б. конюшенная, <br> д. 19/8 <br>
-      <a href=""> как нас найти?</a> <br>
+      <a class="link"  href=""> как нас найти?</a> <br>
       телефон: +7 123 456-78-90</p>
     <div>
       <p>Давайте дружить</p>
       <ul>
-        <li><a href="">Вконтакте</a></li>
-        <li><a href="">Фейсбук</a></li>
-        <li><a href="">Инстаграм</a></li>
+        <li><a class="link"  href="">Вконтакте</a></li>
+        <li><a class="link"  href="">Фейсбук</a></li>
+        <li><a class="link"  href="">Инстаграм</a></li>
       </ul>
     </div>
     <p>
       Разработано:
-      <a href="https://htmlacademy.ru/">Html Academy</a>
+      <a class="link"  href="https://htmlacademy.ru/">Html Academy</a>
     </p>
   </footer>
 </body>

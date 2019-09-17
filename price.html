@@ -4,24 +4,29 @@
 <head>
   <meta charset="utf-8">
   <title>прайс-лист</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="body_style" >
   <header>
-    <nav>
+    <nav class="nav">
       <a>
         <img src="/img/logo-small.svg" width="111" height="24" alt="логотип барбершопа «бородинский»">
       </a>
-      <ul>
-        <li><a href="/index.html#info">информация</a></li>
-        <li><a href="/index.html#news">новости</a></li>
-        <li><a href="/price.html">прайс-лист</a></li>
-        <li><a href="/shop.html">магазин</a></li>парара
-        <li><a href="/index.html#contact">контакты</a></li>
+      <ul class="nav_site">
+        <li><a class="link nav_link"  href="/index.html#info">информация</a></li>
+        <li><a class="link nav_link"  href="/index.html#news">новости</a></li>
+        <li><a class="link nav_link"  href="/price.html">прайс-лист</a></li>
+        <li><a class="link nav_link"  href="/shop.html">магазин</a></li>парара
+        <li><a class="link nav_link"  href="/index.html#contact">контакты</a></li>
       </ul>
-      <ul>
+      <ul class="nav_user">
         <li>
-          <button type="button">войти</button>
+          <a class="link nav_link"  href="login.html">
+            Вход
+          </a>
         </li>
       </ul>
     </nav>
@@ -30,7 +35,7 @@
   <main>
     <h1>прайс-лист</h1>
     <ul>
-      <li><a href="/index.html">главная</a></li>
+      <li><a class="link"  href="/index.html">главная</a></li>
       <li>прайс-лист</li>
     </ul>
     <p>истинно мужская классика</p>
@@ -76,19 +81,19 @@
   <footer>
     <p>барбершоп «бородинский» <br>
       адрес: г. санкт-петербург, ул. б. конюшенная, <br> д. 19/8 <br>
-      <a href=""> как нас найти?</a> <br>
+      <a class="link"  href=""> как нас найти?</a> <br>
       телефон: +7 123 456-78-90</p>
     <div>
       <p>давайте дружить</p>
       <ul>
-        <li><a href="">вконтакте</a></li>
-        <li><a href="">фейсбук</a></li>
-        <li><a href="">инстаграм</a></li>
+        <li><a class="link"  href="">вконтакте</a></li>
+        <li><a class="link"  href="">фейсбук</a></li>
+        <li><a class="link"  href="">инстаграм</a></li>
       </ul>
     </div>
     <p>
       разработано:
-      <a href="https://htmlacademy.ru/">html academy</a>
+      <a class="link"  href="https://htmlacademy.ru/">html academy</a>
     </p>
   </footer>
 </body>

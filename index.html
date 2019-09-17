@@ -4,24 +4,28 @@
 <head>
   <meta charset="utf-8">
   <title>барбершоп «бородинский»</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic"
+    rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="body__style">
   <header>
-    <nav>
+    <nav class="nav">
       <a>
-        <img src="img/index-logo.svg" width="371" height="155" alt="логотип барбершопа «бородинский»">
+        <img class="nav__logo" src="img/index-logo.svg" width="371" height="155" alt="логотип барбершопа «бородинский»">
       </a>
-      <ul>
-        <li><a href="#info">информация</a></li>
-        <li><a href="#news">новости</a></li>
-        <li><a href="/price.html">прайс-лист</a></li>
-        <li><a href="/shop.html">магазин</a></li>
-        <li><a href="#contact">контакты</a></li>
+      <ul class="nav__site">
+        <li><a class="link nav__link" href="#info">информация</a></li>
+        <li><a class="link nav__link" href="#news">новости</a></li>
+        <li><a class="link nav__link" href="/price.html">прайс-лист</a></li>
+        <li><a class="link nav__link" href="/shop.html">магазин</a></li>
+        <li><a class="link nav__link" href="#contact">контакты</a></li>
       </ul>
       <ul>
-        <li>
-          <a href="login.html">
+        <li class="nav__user">
+          <a class="link nav__link" href="login.html">
             Вход
           </a>
         </li>
@@ -33,124 +37,132 @@
   <main>
     <h1 class="visually-hidden">барбершоп «бородинский»</h1>
     <!-- преимущества секция -->
-    <section>
-      <a name="info"></a>
-      <h2 class="visually-hidden">преимущества</h2>
+    <section class="features">
+      <a class="link" name="info"></a>
+      <h2 class="visually-hidden features">преимущества</h2>
 
-      <ul>
+      <ul class="features__list">
         <li>
-          <h3>быстро</h3>
-          <p>мы делаем свою работу быстро! два часа пролетят незаметно и вы — счастливый обладатель стильной
-            стрижки-минутки!</p>
+          <h3 class="features__title">быстро</h3>
+          <p class="features__text">мы делаем свою работу быстро! два часа пролетят незаметно и вы — счастливый
+            обладатель стильной стрижки-минутки!</p>
         </li>
         <li>
-          <h3>круто</h3>
-          <p>забудьте, как вы стриглись раньше. мы сделаем из вас звезду футбола или кино!</p>
+          <h3 class="features__title">круто</h3>
+          <p class="features__text">забудьте, как вы стриглись раньше. мы сделаем из вас звезду футбола или кино!</p>
         </li>
         <li>
-          <h3>дорого</h3>
-          <p>наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает
-            определенный статус?</p>
+          <h3 class="features__title">дорого</h3>
+          <p class="features__text">наши мастера — профессионалы своего дела и не могут стоить дешево. к тому же, разве
+            цена не дает определенный статус?</p>
         </li>
       </ul>
 
+    
     </section>
+
+    <div class="colums">
     <!-- новости секция -->
     <section>
       <a name="news"></a>
-      <h2>новости</h2>
+      <h2 class="colums__title" >новости</h2>
 
-      <ul>
+      <ul class="news__list" >
         <li>
           <p>нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время стрижки</p>
-          <time datetime="2019-01-11">11 января</time>
+          <time class="news__time" datetime="2019-01-11">11 января</time>
         </li>
         <li>
           <p>в нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши
             стройные ряды</p>
-          <time datetime="2019-01-18">18 января</time>
+          <time class="news__time" datetime="2019-01-18">18 января</time>
         </li>
       </ul>
+      <a href="#" class="button link">Все новости</a>
     </section>
     <!-- фотогалерея секция -->
     <section>
-      <h2>фотогалерея</h2>
+      <h2 class="colums__title">фотогалерея</h2>
       <figure>
-        <a href="">
-          <img src="img/foto.jpg" alt="интерьер" width="286" height="164">
+        <a class="link" href="">
+          <img class="gallery__content" src="img/foto.jpg" alt="интерьер" width="286" height="164">
         </a>
       </figure>
-      <button type="button">назад</button>
-      <button type="button">вперед</button>
+      <button class="button"  type="button">назад</button>
+      <button class="button" type="button">вперед</button>
     </section>
-    <!-- контактная информация секция -->
-    <section>
-      <a name="contact"></a>
-      <h2>контактная информация</h2>
+    </div>
 
-      <p>барбершоп «бородинский» <br>
-        адрес: г. санкт-петербург, б. конюшенная, д. 19/8 <br>
-        телефон: +7 (495) 666-02-66</p>
-      <p>
-        время работы: <br>
-        пн—пт: с 10:00 до 22:00 <br>
-        сб—вс: с 10:00 до 19:00
-      </p>
-      <a href="">как проехать</a>
-      <a href="">обратная связь</a>
-    </section>
-    <!-- записаться секция -->
-    <section>
-      <h2>записаться</h2>
-      <p>
-        укажите желаемую дату и время и мы свяжемся с вами для подтверждения
-      </p>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="data">Дата<input type="text" name="data" id="data" placeholder="08.10.2017"></label>
-        </p>
-        <p>
-          <label for="time">Время <input type="time" name="time" id="time" value="10:00"></label>
-        </p>
-        <p>
-          <label for="name">Ваше Имя <input type="text" name="name" id="name" placeholder="Борода"></label>
-        </p>
-        <p>
-          <label for="phone">Телефон <input type="tel" name="phone" id="phone" placeholder="+7 123 456-78-90"></label>
-        </p>
+    <div class="colums">
+      <!-- контактная информация секция -->
+      <section>
+        <a name="contact"></a>
+        <h2 class="colums__title">контактная информация</h2>
 
-      </form>
-      <!-- место для формы-->
-      <button>отправить</button>
-    </section>
+        <p>барбершоп «бородинский» <br>
+          адрес: г. санкт-петербург, б. конюшенная, д. 19/8 <br>
+          телефон: +7 (495) 666-02-66</p>
+        <p>
+          время работы: <br>
+          пн—пт: с 10:00 до 22:00 <br>
+          сб—вс: с 10:00 до 19:00
+        </p>
+        <a class="link button" href="#">как проехать</a>
+        <a class="link button" href="#">обратная связь</a>
+      </section>
+      <!-- записаться секция -->
+      <section class="appointment">
+        <h2 class="colums__title">записаться</h2>
+        <p>
+          укажите желаемую дату и время и мы свяжемся с вами для подтверждения
+        </p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p class="appointment__item">
+            <label for="data">Дата<input class="appointment__input" type="text" name="data" id="data" placeholder="08.10.2017"></label>
+          </p>
+          <p class="appointment__item">
+            <label for="time">Время <input class="appointment__input" type="time" name="time" id="time" value="10:00"></label>
+          </p>
+          <p class="appointment__item">
+            <label for="name">Ваше Имя <input class="appointment__input" type="text" name="name" id="name" placeholder="Борода"></label>
+          </p>
+          <p class="appointment__item">
+            <label for="phone">Телефон <input class="appointment__input" type="tel" name="phone" id="phone" placeholder="+7 123 456-78-90"></label>
+          </p>
+
+        </form>
+        <!-- место для формы-->
+        <button class="button" type="submit" >отправить</button>
+      </section>
+    </div>
   </main>
 
 
   <!-- подвал -->
-  <footer>
+  <footer class="footer">
     <p>барбершоп «бородинский» <br>
       адрес: г. санкт-петербург, ул. б. конюшенная, <br> д. 19/8 <br>
-      <a href=""> как нас найти?</a> <br>
+      <a class="link link--underline" href="#"> как нас найти?</a> <br>
       телефон: +7 123 456-78-90</p>
-    <div>
+    <div class="social">
       <p>давайте дружить</p>
-      <ul>
-        <li><a href="">вконтакте</a></li>
-        <li><a href="">фейсбук</a></li>
-        <li><a href="">инстаграм</a></li>
+      <ul class="social__list">
+        <li><a class="link button--white" href="">вконтакте</a></li>
+        <li><a class="link button--white" href="">фейсбук</a></li>
+        <li><a class="link button--white" href="">инстаграм</a></li>
       </ul>
     </div>
-    <p>
+    <p class="copyright">
       разработано:
-      <a href="https://htmlacademy.ru/">html academy</a>
+      <a class="link button button--white" href="https://htmlacademy.ru/">html academy</a>
     </p>
   </footer>
 
 
 
   <!-- личный кабинет поп-ап -->
-  <section>
-    <h2>личный кабинет</h2>
+  <section class="modal ">
+    <h2 class="modal__title">личный кабинет</h2>
     <p>введите свой логин и пароль</p>
     <form action="https://echo.htmlacademy.ru" method="post">
       <p>
@@ -166,9 +178,9 @@
           <input type="checkbox" name="remember">
           Запомните меня
         </label>
-        <a href="#">Я забыл пароль!</a>
+        <a class="link link--underline modal__link" href="#">Я забыл пароль!</a>
       </p>
-      <button type="submit">
+      <button type="submit" class="button">
         Войти
       </button>
     </form>
@@ -176,10 +188,11 @@
   </section>
 
   <!-- как добраться поп-ап -->
-  <section>
-    <h2>как до нас добраться</h2>
+  <section class="modal">
+    <h2 class="modal__title" >как до нас добраться</h2>
+    
     <p>
-      <img src="img/map.jpg" width="780" height="560"
+      <img src="/img/map.jpg" width="767" height="561"
         alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </p>
     <button type="button">закрыть</button>
@@ -187,3 +200,7 @@
 </body>
 
 </html>
+
+
+
+

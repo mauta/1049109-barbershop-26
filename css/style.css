@@ -1,0 +1,186 @@
+.body__style {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 24px;
+
+  background-color: black;
+  background-image: url("/img/background.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+}
+
+.link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.nav {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #000000;
+}
+
+.nav__logo {}
+
+.nav__site,
+.nav__user {
+  list-style: none;
+}
+
+.nav__link:hover,
+.nav__link:active {
+  background-color: #242424;
+}
+
+.features__list {
+  list-style: none;
+
+}
+
+/* два вот этих вида заголовков у нас отличаются только центровкой
+как их логичнее по классам разбить по БЭМ? сделать общий класс Title
+и к нему доп класс с модификатором Title--features, Title--colums? 
+или title--center, title--left?
+или забиваем оставляем только логику от крупного к мелкому?  */
+.features__title {
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.colums__title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.features__text {
+  text-align: center;
+}
+
+.colums {
+  background-color: #f8f5f2;
+  background-image: url("/img/bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  width: 940px;
+  margin: auto;
+
+  color: #000000;
+}
+
+.news__list {
+  list-style: none;
+}
+
+.news__time {
+  text-transform: none;
+}
+
+.gallery__content {
+  border: 7px solid #ffffff;
+  background-color: darkgrey;
+}
+
+.button {
+  background-color: #000000;
+  color: white;
+  width: 140px;
+  height: 43px;
+  border: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #663d15;
+}
+
+.appointment__input {
+  font: inherit;
+  color: rgba(0, 0, 0, 0.7);
+  background-color: transparent;
+  border: 2px solid #000000;
+
+}
+
+.appointment__input:hover,
+.appointment__input:focus,
+.appointment__input:active {
+  border-color: #663d15;
+  outline: none;
+}
+
+.footer {
+  background-color: #212121;
+  background-image: url("/img/bg-dark.jpg");
+  background-repeat: repeat;
+
+}
+
+.social {
+  text-align: center;
+}
+
+.social__list {
+  list-style: none;
+}
+
+.link--underline {
+  text-decoration: underline;
+}
+
+
+.button--white:hover,
+.button--white:focus,
+.button--white:active {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.modal {
+  background-color: #f8f5f2;
+  background-image: url("/img/bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  color: #000000;
+}
+
+.modal__title {
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.modal__link{
+    color: #000000;
+}
