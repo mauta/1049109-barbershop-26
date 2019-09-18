@@ -4,27 +4,28 @@
 <head>
   <meta charset="utf-8">
   <title>прайс-лист</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic"
+    rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="body_style" >
+<body class="body">
   <header>
-    <nav class="nav">
+    <nav class="navigation">
       <a>
-        <img src="/img/logo-small.svg" width="111" height="24" alt="логотип барбершопа «бородинский»">
+        <img src="img/logo-small.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
       </a>
-      <ul class="nav_site">
-        <li><a class="link nav_link"  href="/index.html#info">информация</a></li>
-        <li><a class="link nav_link"  href="/index.html#news">новости</a></li>
-        <li><a class="link nav_link"  href="/price.html">прайс-лист</a></li>
-        <li><a class="link nav_link"  href="/shop.html">магазин</a></li>парара
-        <li><a class="link nav_link"  href="/index.html#contact">контакты</a></li>
+      <ul class="list navigation_site">
+        <li><a class="link navigation_link" href="/index.html#info">Информация</a></li>
+        <li><a class="link navigation_link" href="/index.html#news">Новости</a></li>
+        <li><a class="link navigation_link" href="/price.html">Прайс-лист</a></li>
+        <li><a class="link navigation_link" href="/shop.html">Магазин</a></li>
+        <li><a class="link navigation_link" href="/index.html#contact">Контакты</a></li>
       </ul>
-      <ul class="nav_user">
+      <ul class="list navigation_user">
         <li>
-          <a class="link nav_link"  href="login.html">
+          <a class="link navigation_link" href="login.html">
             Вход
           </a>
         </li>
@@ -32,17 +33,17 @@
     </nav>
   </header>
 
-  <main>
-    <h1>прайс-лист</h1>
-    <ul>
-      <li><a class="link"  href="/index.html">главная</a></li>
-      <li>прайс-лист</li>
+  <main class="inner">
+    <h1 class="title">прайс-лист</h1>
+    <ul class="list">
+      <li><a class="link link--black breadcrumbs__link" href="/index.html">главная</a></li>
+      <li class="breadcrumbs--current">прайс-лист</li>
     </ul>
-    <p>истинно мужская классика</p>
+    <p class="title--big">истинно мужская классика</p>
     <!-- преимущества -->
     <section>
-      <h2>мы используем только лучшие средства</h2>
-      <ul>
+      <h2 class="title--small">мы используем только лучшие средства</h2>
+      <ul class="list">
         <li>baxter of california</li>
         <li>mr natty</li>
         <li>suavecito</li>
@@ -51,49 +52,52 @@
     </section>
     <!-- цены -->
     <section>
-      <h2>цены на услуги наших мастеров</h2>
-      <table>
+      <h2 class="title--small">цены на услуги наших мастеров</h2>
+      <table class="services" >
         <tr>
-          <td>стрижка</td>
-          <td>1500 р</td>
+          <td class="services__item" >стрижка</td>
+          <td class="services__item services__item--center" >1500 р</td>
         </tr>
         <tr>
-          <td>стрижка бороды</td>
-          <td>500 р</td>
+          <td class="services__item" >стрижка бороды</td>
+          <td class="services__item services__item--center" >500 р</td>
         </tr>
         <tr>
-          <td>накрутка усов</td>
-          <td>350 р</td>
+          <td class="services__item" >накрутка усов</td>
+          <td class="services__item services__item--center" >350 р</td>
         </tr>
       </table>
     </section>
     <!-- о нас -->
     <section>
-        <h2>несколько слов о нас:</h2>
-        <p>наша парикмахерская занимается исключительно мужскими стрижками. стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. мы не работаем на количество, мы делаем качество.</p>
-        <p>наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+      <h2 class="title--small">несколько слов о нас:</h2>
+      <p>наша парикмахерская занимается исключительно мужскими стрижками. стрижка каждого клиента для нас - это
+        уникальная и продуманная до мелочей работа. мы не работаем на количество, мы делаем качество.</p>
+      <p>наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в
+        обеденный перерыв. здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и
+        свободно!</p>
 
     </section>
 
   </main>
 
   <!-- подвал -->
-  <footer>
+  <footer class="footer">
     <p>барбершоп «бородинский» <br>
       адрес: г. санкт-петербург, ул. б. конюшенная, <br> д. 19/8 <br>
-      <a class="link"  href=""> как нас найти?</a> <br>
+      <a class="link link--underline" href="#"> как нас найти?</a> <br>
       телефон: +7 123 456-78-90</p>
-    <div>
+    <div class="social">
       <p>давайте дружить</p>
-      <ul>
-        <li><a class="link"  href="">вконтакте</a></li>
-        <li><a class="link"  href="">фейсбук</a></li>
-        <li><a class="link"  href="">инстаграм</a></li>
+      <ul class="list">
+        <li><a class="link button--white" href="">вконтакте</a></li>
+        <li><a class="link button--white" href="">фейсбук</a></li>
+        <li><a class="link button--white" href="">инстаграм</a></li>
       </ul>
     </div>
-    <p>
+    <p class="copyright">
       разработано:
-      <a class="link"  href="https://htmlacademy.ru/">html academy</a>
+      <a class="link button button--white" href="https://htmlacademy.ru/">html academy</a>
     </p>
   </footer>
 </body>

@@ -1,4 +1,4 @@
-.body__style {
+.body {
   margin: 0;
   padding: 0;
 
@@ -14,11 +14,16 @@
   background-repeat: no-repeat;
   background-position: top center;
 
+  
 }
 
 .link {
   text-decoration: none;
   color: #ffffff;
+}
+
+.list {
+  list-style: none;
 }
 
 .visually-hidden {
@@ -32,50 +37,42 @@
   overflow: hidden;
 }
 
-.nav {
+.navigation {
   font-size: 16px;
   line-height: 20px;
   background-color: #000000;
 }
 
-.nav__logo {}
+.navigation__logo {}
 
-.nav__site,
-.nav__user {
+.navigation__site,
+.navigation__user {
   list-style: none;
 }
 
-.nav__link:hover,
-.nav__link:active {
+.navigation__link:hover,
+.navigation__link:active {
   background-color: #242424;
 }
 
-.features__list {
-  list-style: none;
-
-}
-
-/* два вот этих вида заголовков у нас отличаются только центровкой
-как их логичнее по классам разбить по БЭМ? сделать общий класс Title
-и к нему доп класс с модификатором Title--features, Title--colums? 
-или title--center, title--left?
-или забиваем оставляем только логику от крупного к мелкому?  */
-.features__title {
-  font-size: 30px;
-  line-height: 42px;
+.title--center {
   text-align: center;
 }
 
-.colums__title {
+.title {
   font-size: 30px;
   line-height: 42px;
+}
+.title--small {
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .features__text {
   text-align: center;
 }
 
-.colums {
+.columns {
   background-color: #f8f5f2;
   background-image: url("/img/bg.png");
   background-repeat: no-repeat;
@@ -87,9 +84,7 @@
   color: #000000;
 }
 
-.news__list {
-  list-style: none;
-}
+
 
 .news__time {
   text-transform: none;
@@ -146,14 +141,17 @@
   text-align: center;
 }
 
-.social__list {
-  list-style: none;
-}
+
 
 .link--underline {
   text-decoration: underline;
 }
 
+.link--underline:hover,
+.link--underline:focus,
+.link--underline:active{
+  text-decoration: none;
+}
 
 .button--white:hover,
 .button--white:focus,
@@ -171,16 +169,152 @@
   background-image: url("/img/bg.png");
   background-repeat: no-repeat;
   background-position: top center;
-
+  
   color: #000000;
 }
 
-.modal__title {
-  font-size: 30px;
-  line-height: 42px;
-  text-align: center;
+
+
+.link--black {
+  color: #000000;
 }
 
-.modal__link{
-    color: #000000;
+.modal__input {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.modal__input:hover,
+.modal__input:focus,
+.modal__input:active {
+  border-color: #663d15;
+}
+
+.modal__remember:hover,
+.modal__remember:focus {
+  color: #663d15;
+}
+
+.modal__link:hover,
+.modal__link:focus {
+  text-decoration: none;
+}
+
+.modal__map--border{
+  width: 780px;
+  height: 560px;
+  border: 7px solid #ffffff;
+  position: relative;
+  overflow:hidden;
+}
+
+.modal__map{
+  position: absolute;
+  transform: translate(-465px, -112px);
+}
+
+.inner{
+ 
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  line-height: 24px;
+  background-color: #f8f5f2;
+  background-image: url("/img/bg.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  
+ 
+}
+
+.breadcrumbs--current{
+  color: #aba9a7;
+}
+
+.breadcrumbs__link:hover,
+.breadcrumbs__link:focus{
+  text-decoration: underline;
+}
+
+.description--gray{
+  color: #aeaeae;
+  text-align: right;
+}
+
+.product--shadow{
+ box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.product__price{
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  background-color: #e5e5e5;
+  width: 110px;
+  height: 33px;
+}
+
+.filter__text{
+  line-height: 18px;
+}
+
+.filter{
+  border: none;
+}
+
+.filter__input:hover +.filter__text,
+.filter__input:focus + .filter__text{
+  color: #663d15;
+}
+
+.filter-input:disabled +.filter__text{
+  color: #000000;
+
+  opacity: 0.5;
+}
+
+.product__item{
+  background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 220px;
+}
+.product__item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.product__text{
+  font-size: 14px;
+  line-height: 18px; 
+}
+.product__category{
+  text-transform: none;
+}
+
+.button--small{
+  width: 78px;
+}
+
+.title--big{
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+  text-align: center;  
+}
+
+.services{
+  border-collapse: collapse;
+}
+.services__item{
+  border:1px solid #000000;
+  width: 230px;
+  height: 20px;
+}
+
+.services__item--center{
+  text-align: center;
 }
